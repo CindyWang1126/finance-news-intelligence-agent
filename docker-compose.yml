@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  app:
+    build: ./app
+    ports:
+      - "8501:8501"
+    environment:
+      - NEWSDATA_API_KEY=${NEWSDATA_API_KEY}
+      - FX_BASE=USD
+      - FX_SYMBOLS=TWD,JPY,EUR
+  worker:
+    build: ./worker
+    environment:
+      - NEWSDATA_API_KEY=${NEWSDATA_API_KEY}
+      - FX_BASE=USD
+      - FX_SYMBOLS=TWD,JPY,EUR
+      - OUTPUT_DIR=/output
+    volumes:
+      - ./output:/output
