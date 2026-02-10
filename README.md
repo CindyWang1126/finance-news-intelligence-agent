@@ -6,6 +6,14 @@ This project demonstrates a simple cloud architecture design + CI/CD pipeline + 
 
 ---
 
+## Live Demo
+https://finance-news-intelligence-agent.streamlit.app
+
+## Preview
+![Dashboard Preview](docs/preview-dashboard.png)
+
+---
+
 ## Demo (Local)
 
 After running, open:
@@ -263,5 +271,6 @@ Includes:
 
 Cindy Wang
 GitHub: [https://github.com/CindyWang1126](https://github.com/CindyWang1126)
+
 
 
