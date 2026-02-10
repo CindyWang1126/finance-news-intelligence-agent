@@ -252,9 +252,10 @@ Includes:
 
 ## Notes
 
-* `.env` is ignored by `.gitignore`
-* For security, API keys should only be stored in `.env` or secret managers
-* For real production deployment, API keys should be stored in AWS Secrets Manager
+- `.env` is ignored by `.gitignore` (do **not** commit API keys).
+- For security, API keys should only be stored in `.env` locally or secret managers in the cloud.
+- For production deployment on AWS, store secrets in **AWS Secrets Manager** (or Parameter Store) and inject them into the runtime environment.
+- Docker is optional for local development. If Docker is not installed, you can still run the app via `pip + streamlit` and run the worker via `python`.
 
 ---
 
@@ -262,4 +263,5 @@ Includes:
 
 Cindy Wang
 GitHub: [https://github.com/CindyWang1126](https://github.com/CindyWang1126)
+
 
