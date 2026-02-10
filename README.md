@@ -9,20 +9,27 @@ This project demonstrates a simple cloud architecture design + CI/CD pipeline + 
 ## Live Demo
 https://finance-news-intelligence-agent.streamlit.app
 
+You will see:
+- Latest business news (NewsData.io API)
+- FX snapshot (open.er-api.com / Exchange Rate API)
+
 ## Preview
 ![Dashboard Preview](docs/preview-dashboard.png)
 
 ---
 
-## Demo (Local)
+## Architecture
+![Cloud Architecture](docs/cloud-architecture.png)
 
-After running, open:
+---
 
-- http://localhost:8501
+## CI/CD
+![CI/CD Flow](docs/cicd-flow.png)
 
-The dashboard will display:
-- Latest business news (Newsdata.io API)
-- FX snapshot (open.er-api.com / exchangerate API)
+---
+
+## Git Flow
+![Git Flow](docs/git-flow.png)
 
 ---
 
@@ -271,6 +278,7 @@ Includes:
 
 Cindy Wang
 GitHub: [https://github.com/CindyWang1126](https://github.com/CindyWang1126)
+
 
 
 
